@@ -13,15 +13,6 @@ public class Solution {
         arr.add(new Chapter("5","First Assignment","6"));
         arr.add(new Chapter("6","Canadian History","None"));
 
-
-        /*
-            US History
-              - First Chapter
-                - Third Assignment
-              - Second Assignment
-            Canada History
-               First Assignment
-         */
         HashMap<String,ArrayList<Chapter>> hmap = new HashMap();
 
         for(Chapter c:arr) {
@@ -81,3 +72,12 @@ public class Solution {
         }
     }
 }
+
+        /*
+            US History
+              - First Chapter
+                - Third Assignment
+              - Second Assignment
+            Canada History
+               First Assignment
+         */
