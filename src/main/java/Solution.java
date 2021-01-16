@@ -35,9 +35,7 @@ public class Solution {
             System.out.println(c.getName());
             level = 0;
             printDocument(hmap, c.getId(),level);
-            System.out.println("-------------------------");
         }
-        //System.out.println(hmap.toString());
         /*
         1 -> 3,4
         2 -> NULL
@@ -63,21 +61,12 @@ public class Solution {
             while(c.size()>0) {
                 String id = c.get(0).getId();
                 for(int i=0;i<level;i++) {
-                    System.out.print(" ");
+                    System.out.print("-");
                 }
-                System.out.println("-"+c.get(0).getName());
+                System.out.println(c.get(0).getName());
                 c.remove(0);
                 printDocument(hmap, id, level);
             }
         }
     }
 }
-
-        /*
-            US History
-              - First Chapter
-                - Third Assignment
-              - Second Assignment
-            Canada History
-               First Assignment
-         */
