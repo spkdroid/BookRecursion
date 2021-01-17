@@ -13,6 +13,22 @@ public class Solution {
         arr.add(new Chapter("5","First Assignment","6"));
         arr.add(new Chapter("6","Canadian History","None"));
 
+         /*
+        1 -> 3,4
+        2 -> NULL
+        3 -> 2
+        4 -> NULL
+        5 -> NULL
+        6 -> 5
+
+        1 Print
+          3 Print
+            2 Print
+          4 Print
+        6 Print
+          5 Print
+         */
+
         HashMap<String,ArrayList<Chapter>> hmap = new HashMap();
 
         for(Chapter c:arr) {
@@ -36,21 +52,6 @@ public class Solution {
             level = 0;
             printDocument(hmap, c.getId(),level);
         }
-        /*
-        1 -> 3,4
-        2 -> NULL
-        3 -> 2
-        4 -> NULL
-        5 -> NULL
-        6 -> 5
-
-        1 Print
-          3 Print
-            2 Print
-          4 Print
-        6 Print
-          5 Print
-         */
     }
 
     private static void printDocument(HashMap<String, ArrayList<Chapter>> hmap, String n, int level) {
